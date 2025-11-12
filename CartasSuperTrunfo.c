@@ -1,15 +1,64 @@
+
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
-
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
+    char estado[2], cidade[20], cod[4];
+    int populacao, turismo;
+    float area, pib;
 
-  // Área para entrada de dados
+    printf("Código: ");
+    scanf(" %3s", cod); // estabeleci um limite de 3 caracteres
+    printf("Estado: ");
+    scanf(" %s", estado);
+    printf("Cidade: ");
+    scanf(" %s", cidade);
+    printf("População: ");
+    scanf("%d", &populacao);
+    printf("Número do Pontos Turísticos: ");
+    scanf("%d", &turismo);
+    printf("Área: ");
+    scanf("%f", &area);
+    printf("PIB: ");
+    scanf("%f", &pib); 
 
-  // Área para exibição dos dados da cidade
+    printf("\n"); // adicionei uma linha em branco para melhorar a visualização da saída e do código
 
-return 0;
-} 
+    printf("Carta 1:\n");
+    printf("Estado: %s\n", estado); // inseri um espaço no formato %s para evitar problemas com a saída do texto
+    printf("Código: %s\n", cod);
+    printf("Cidade: %s\n", cidade);
+    printf("População: %d hab\n", populacao);
+    printf("Número de Pontos Turísticos: %d\n", turismo);
+    printf("Área: %.2f km2\n", area); // inseri o formato .2f para limitar a 2 casas decimais
+    printf("PIB: %.2f bilhões de reais\n", pib);
+
+    printf("\n");
+
+    printf("Código: ");
+    scanf(" %3s", cod);
+    printf("Estado: ");
+    scanf(" %s", estado);
+    printf("Cidade: ");
+    scanf(" %s", cidade);
+    printf("População: ");
+    scanf("%d", &populacao);
+    printf("Número do Pontos Turísticos: ");
+    scanf("%d", &turismo);
+    printf("Área: ");
+    scanf("%f", &area);
+    printf("PIB: ");
+    scanf("%f", &pib);
+
+    printf("\n");
+
+    printf("Carta 2:\n");
+    printf("Estado: %s\n", estado); // inseri um espaço no formato para evitar problemas com a saída do texto
+    printf("Código: %s\n", cod);
+    printf("Cidade: %s\n", cidade);
+    printf("População: %d hab\n", populacao);
+    printf("Número de Pontos Turísticos: %d\n", turismo);
+    printf("Área: %.2f km2\n", area); // inseri o formato .2f para limitar a 2 casas decimais
+    printf("PIB: %.2f bilhões de reais\n", pib);
+
+    return 0;
+}
